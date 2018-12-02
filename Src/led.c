@@ -234,23 +234,12 @@ void LED_SetBackLight(bool light,uint16_t cycle){
 	sConfigOC.OCMode = TIM_OCMODE_PWM2;
 	sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
 	sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-<<<<<<< HEAD
 
-	htim3.Init.Period = period;
-	HAL_TIM_Base_Init(&htim3);
-
-	if (light){
-		if (cycle == LED_BL_STATIC){
-			sConfigOC.Pulse = 0; //always on
-		}else{
-			htim3.Init.Period = cycle;
-=======
     if (light){
     	if (cycle == LED_BL_STATIC){
     		sConfigOC.Pulse = 0; //always on
     	}else{
     		htim3.Init.Period = cycle;
->>>>>>> refs/heads/board_R1.2
 			sConfigOC.Pulse = cycle / 2;
 		}
 		HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_4);

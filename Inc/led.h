@@ -85,11 +85,7 @@ extern "C" {
 #define OC_CONST_LED_OFF   0      
 #define OC_CONST_LED_ON    (period-1)
 #define LED_BL_STATIC		0
-<<<<<<< HEAD
-#define LED_BL_LOWPWR		6
-=======
 #define LED_BL_LOWPWR		33
->>>>>>> refs/heads/board_R1.2
 #define LED_BL_SLWBLK		30000
 #define LED_BL_FSTBLK		15000
 
