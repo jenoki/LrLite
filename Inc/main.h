@@ -78,6 +78,9 @@ void Error_Handler(void);
 #define TIM_PERIOD_1SEC 10000
 #define TIM_PERIOD_125uS 125
 #define TIM_PERIOD_10mS 10000
+#define LrLite_VENDOR "Ruffles Inc."
+#define LrLite_PRODUCT "LrLite"
+#define LrLite_PID 0xBBA
 #define SDA_Pin GPIO_PIN_0
 #define SDA_GPIO_Port GPIOF
 #define SCL_Pin GPIO_PIN_1

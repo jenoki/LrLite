@@ -65,12 +65,11 @@
 
 #define USBD_VID     1155
 #define USBD_LANGID_STRING     1033
-#define USBD_MANUFACTURER_STRING     "Ruffles Inc."
-#define USBD_PID_FS     3002
-#define USBD_PRODUCT_STRING_FS     "LrLite"
-
-#define USBD_CONFIGURATION_STRING_FS     "LrLite Config"
-#define USBD_INTERFACE_STRING_FS     "LrLite Keyboard"
+#define USBD_MANUFACTURER_STRING     LrLite_VENDOR
+#define USBD_PID_FS     LrLite_PID
+#define USBD_PRODUCT_STRING_FS     LrLite_PRODUCT
+#define USBD_CONFIGURATION_STRING_FS     "HID Config"
+#define USBD_INTERFACE_STRING_FS     "HID Interface"
 
 /* USER CODE BEGIN PRIVATE_DEFINES */
 #endif
