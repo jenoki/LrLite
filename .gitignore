@@ -5,6 +5,7 @@
 *.o
 *.ko
 *.obj
+*.elf
 
 # Linker output
 *.ilk
@@ -33,6 +34,7 @@
 *.app
 *.i*86
 *.x86_64
+*.hex
 
 # Debug files
 *.dSYM/
@@ -48,10 +50,14 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-/Debug/
-
 #Others
+/Debug/
+/Release/Drivers/
+/Release/Middleweres
+/Release/Src/
+/Release/startup/
+/Src/Backup/
+/Inc/Backup/
 *.bak
 *.kicad_pcb-bak
-*.mk
-*.list
+/.settings/
