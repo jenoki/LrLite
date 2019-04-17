@@ -197,7 +197,7 @@ void TIM1_BRK_UP_TRG_COM_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_BRK_UP_TRG_COM_IRQn 0 */
     uint8_t r;
-    //keyboad matrix
+    //keyboard matrix
     switch(keyline){
         case 0:
             r = (Mx_GPIO_Port->IDR) & L013MASK;
