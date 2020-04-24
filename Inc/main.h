@@ -33,7 +33,7 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #define USBD_DEVICE_VER_MAJ	0x00
-#define USBD_DEVICE_VER_MIN	0x23
+#define USBD_DEVICE_VER_MIN	0x24
 #include <key_define.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -80,7 +80,8 @@ void Error_Handler(void);
 #define TIM_PERIOD_10mS 10000
 #define LrLite_VENDOR "Ruffles Inc."
 #define LrLite_PRODUCT "LrLite"
-#define LrLite_PID 0xBBA
+#define LrLite_VID 0x1209
+#define LrLite_PID 0xB737
 #define SDA_Pin GPIO_PIN_0
 #define SDA_GPIO_Port GPIOF
 #define SCL_Pin GPIO_PIN_1
@@ -122,7 +123,7 @@ void Error_Handler(void);
 /* USER CODE BEGIN Private defines */
 
 //USB descriptor definition (instead of usbd.desc.h)
-#define USBD_VID     1155
+#define USBD_VID     0x1209
 #define USBD_LANGID_STRING     1033
 #define USBD_MANUFACTURER_STRING     "Ruffles Inc."
 #define USBD_PID_FS     3002
